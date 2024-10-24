@@ -769,8 +769,8 @@ namespace MinecraftClient
             if (!String.IsNullOrEmpty(errorMessage))
             {
                 ConsoleIO.Reset();
-                while (Console.KeyAvailable)
-                    Console.ReadKey(true);
+                // while (Console.KeyAvailable)
+                //     Console.ReadKey(true);
                 ConsoleIO.WriteLine(errorMessage);
 
                 if (disconnectReason.HasValue)
